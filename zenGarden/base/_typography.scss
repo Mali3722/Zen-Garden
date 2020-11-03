@@ -1,0 +1,57 @@
+// typeface
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+$font-primary: 'Roboto',
+sans-serif;
+
+//set base values
+$text-base: 1rem;
+$text-scale-ratio: 1.2;
+
+// text weight
+$text-thin: 100;
+$text-light: 300;
+$text-regular: 400;
+$text-medium: 500;
+$text-bold: 700;
+
+// type scale
+$text-xs: $text-base / $text-scale-ratio / $text-scale-ratio;
+$text-sm: $text-base / $text-scale-ratio;
+$text-md: $text-base * $text-scale-ratio;
+$text-lg: $text-md * $text-scale-ratio;
+$text-xl: $text-lg * $text-scale-ratio;
+$text-xxl: $text-xl * $text-scale-ratio;
+$text-xxxl: $text-xxl * $text-scale-ratio;
+$text-xxxxl: $text-xxxl * $text-scale-ratio;
+
+// display type scale
+$text-display-4: $text-xxxxl * $text-scale-ratio;
+$text-display-3: $text-display-4 * $text-scale-ratio;
+$text-display-2: $text-display-3 * $text-scale-ratio;
+$text-display-1: $text-display-2 * $text-scale-ratio;
+
+// line-height
+$heading-line-height: 1;
+$body-line-height: 1.5;
+
+// base letter-spacing
+
+// displays - h1
+$letter-spacing-xs: -0.094rem;
+// h2
+$letter-spacing-sm: -0.031rem;
+// Subtitle 2
+$letter-spacing-md: 0.006rem;
+// Subtitle 1 - h6
+$letter-spacing-lg: 0.009rem;
+// h4
+$letter-spacing-xl: 0.016rem;
+// Sub-Body - Caption
+$letter-spacing-xxl: 0.025rem;
+// Paragraph
+$letter-spacing-xxxl: 0.031rem;
+// Button
+$letter-spacing-xxxxl: 0.078rem;
+// Overline
+$letter-spacing-xxxxxl: 0.094rem;

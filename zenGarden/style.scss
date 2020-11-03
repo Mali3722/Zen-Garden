@@ -1,0 +1,306 @@
+@import 'base';
+
+/* --------------------------------------------------
+GENERAL
+-------------------------------------------------- */
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: $text-base;
+    font-weight: $text-regular;
+    text-align: left;
+}
+
+/* --------------------------------------------------
+HEADING
+-------------------------------------------------- */
+
+h1,
+h2,
+h3 {
+    line-height: $heading-line-height;
+}
+
+h1 {
+    font-size: $text-xxxxl;
+    font-weight: $text-bold;
+    letter-spacing: $letter-spacing-xs;
+    padding: 0 $space-xs;
+}
+
+h2 {
+    font-size: $text-xxl;
+    font-weight: $text-light;
+    letter-spacing: $letter-spacing-sm;
+    padding: 0 $space-sm;
+}
+
+h3 {
+    font-size: $text-xl;
+    font-weight: $text-regular;
+    padding: $space-xs;
+}
+
+p {
+    letter-spacing: $letter-spacing-xxxl;
+    line-height: $body-line-height;
+    padding: $space-md;
+}
+
+/* --------------------------------------------------
+LINKS
+-------------------------------------------------- */
+
+
+/* --------------------------------------------------
+GENERAL INLINE
+-------------------------------------------------- */
+
+abbr[title],
+abbr[data-original-title] {
+    text-decoration: underline dotted;
+    cursor: help;
+    border-bottom: 0;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+}
+
+/* --------------------------------------------------
+GENERAL
+-------------------------------------------------- */
+
+.page-wrapper {
+    @include grid(1, 100%);
+}
+
+/* --------------------------------------------------
+HEADER
+-------------------------------------------------- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 75vh;
+    grid-column: 1;
+    padding-bottom: $space-xl;
+}
+
+
+header abbr[title] {
+    text-decoration: none;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-height: 25vh;
+    grid-column: 1;
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.preamble {
+    padding: $space-lg 0;
+    background: $color-primary-lighter;
+}
+
+.explanation {
+    padding-top: $space-lg;
+}
+
+.participation {
+    padding-bottom: $space-lg;
+}
+
+.benefits {
+    padding: $space-lg 0;
+    background: $color-primary-lighter;
+}
+
+.requirements {
+    padding-top: $space-lg;
+
+    p:last-of-type {
+        background: $color-primary-light;
+        margin: 0;
+        padding: $component-padding;
+    }
+}
+
+footer {
+    background: $color-primary;
+    padding: $space-lg $component-padding;
+}
+
+.wrapper {
+    @include grid(1, 100%);
+}
+
+.design-selection {
+    grid-row: 1;
+    background: $color-contrast-lower;
+    padding: $space-lg 0;
+
+    ul {
+        margin: $component-padding;
+
+        li {
+            margin: $component-padding 0;
+        }
+    }
+}
+
+.design-archives {
+    grid-row: 3;
+    background: $color-primary;
+    padding: $space-lg 0;
+    color: $color-white;
+
+    ul {
+        margin: $component-padding;
+
+        li {
+            margin: $component-padding 0;
+        }
+    }
+}
+
+.zen-resources {
+    grid-row: 2;
+    background: $color-contrast-low;
+    padding: $space-lg 0;
+
+    ul {
+        margin: $component-padding;
+
+        li {
+            margin: $component-padding 0;
+        }
+    }
+}
+
+@include breakpoint(sm) {
+    .page-wrapper {
+        @include grid(12, 8.33%);
+    }
+
+    .intro {
+        grid-column: span 12;
+    }
+
+    header {
+        height: 85vh;
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 15vh;
+        grid-column: 1;
+        background-color: $color-primary;
+        color: $color-white;
+
+        p:first-of-type {
+            width: 55%;
+        }
+    }
+
+    .preamble {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            max-width: 60%;
+        }
+    }
+
+    .main {
+        grid-column: span 12;
+        @include grid(12, 8.33%);
+    }
+
+    .explanation,
+    .participation {
+        padding: $space-lg;
+    }
+
+    .explanation {
+        grid-column: 2 / span 5;
+    }
+
+    .participation {
+        grid-column: 7 / span 5;
+    }
+
+    .benefits {
+        grid-column: span 12;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: $component-padding;
+    }
+
+    .requirements {
+        grid-column: span 12;
+        @include grid(12, 8.33%);
+
+        h3 {
+            grid-column: span 12;
+            text-align: center;
+        }
+
+        p {
+            grid-column: 4 / span 6;
+            padding: $space-lg;
+        }
+
+        p:last-of-type {
+            grid-column: span 12;
+            text-align: center;
+            font-size: $text-xxl;
+            padding: $component-padding $space-xxl;
+        }
+    }
+
+    footer {
+        grid-column: span 12;
+        display: flex;
+        justify-content: center;
+
+        a {
+            padding: $component-padding;
+        }
+    }
+
+    .sidebar {
+        grid-column: span 12;
+    }
+
+    .wrapper {
+        @include grid(12, 8.33%);
+    }
+
+    .design-selection {
+        grid-column: 1 / span 6;
+    }
+
+    .design-archives {
+        grid-row: 2;
+        grid-column: span 12;
+    }
+
+    .zen-resources {
+        grid-row: 1;
+        grid-column: 7 / span 6;
+    }
+}

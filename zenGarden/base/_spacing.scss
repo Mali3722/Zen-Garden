@@ -1,0 +1,28 @@
+// base spacing
+$space-unit: 1em;
+
+// spacing calc
+$space-xxxxs: 0.125 * $space-unit;
+$space-xxxs: 0.25 * $space-unit;
+$space-xxs: 0.375 * $space-unit;
+$space-xs: 0.5 * $space-unit;
+$space-sm: 0.75 * $space-unit;
+$space-md: 1.25 * $space-unit;
+$space-lg: 2 * $space-unit;
+$space-xl: 3.25 * $space-unit;
+$space-xxl: 5.25 * $space-unit;
+$space-xxxl: 8.5 * $space-unit;
+$space-xxxxl: 13.75 * $space-unit;
+$component-padding: $space-md;
+
+// width
+$width-xs: 32em;
+// ~512px
+$width-sm: 48em;
+// ~768px
+$width-md: 64em;
+// ~1024px
+$width-lg: 80em;
+// ~1280px
+$width-xl: 90em;
+// ~1440px

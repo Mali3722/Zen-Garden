@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------------------------------------
+GENERAL
+-------------------------------------------------- */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* --------------------------------------------------
+HEADING
+-------------------------------------------------- */
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2.98598rem;
+  font-weight: 700;
+  letter-spacing: -0.094rem;
+  padding: 0 0.5em;
+}
+
+h2 {
+  font-size: 2.0736rem;
+  font-weight: 300;
+  letter-spacing: -0.031rem;
+  padding: 0 0.75em;
+}
+
+h3 {
+  font-size: 1.728rem;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
+p {
+  letter-spacing: 0.031rem;
+  line-height: 1.5;
+  padding: 1.25em;
+}
+
+/* --------------------------------------------------
+LINKS
+-------------------------------------------------- */
+/* --------------------------------------------------
+GENERAL INLINE
+-------------------------------------------------- */
+abbr[title],
+abbr[data-original-title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+/* --------------------------------------------------
+GENERAL
+-------------------------------------------------- */
+.page-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 100%))[1];
+      grid-template-columns: repeat(1, minmax(0, 100%));
+}
+
+/* --------------------------------------------------
+HEADER
+-------------------------------------------------- */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 75vh;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding-bottom: 3.25em;
+}
+
+header abbr[title] {
+  text-decoration: none;
+}
+
+.summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 25vh;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  background-color: #008f5a;
+  color: white;
+}
+
+.preamble {
+  padding: 2em 0;
+  background: #00f59b;
+}
+
+.explanation {
+  padding-top: 2em;
+}
+
+.participation {
+  padding-bottom: 2em;
+}
+
+.benefits {
+  padding: 2em 0;
+  background: #00f59b;
+}
+
+.requirements {
+  padding-top: 2em;
+}
+
+.requirements p:last-of-type {
+  background: #00c27b;
+  margin: 0;
+  padding: 1.25em;
+}
+
+footer {
+  background: #008f5a;
+  padding: 2em 1.25em;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 100%))[1];
+      grid-template-columns: repeat(1, minmax(0, 100%));
+}
+
+.design-selection {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background: #f2f2f2;
+  padding: 2em 0;
+}
+
+.design-selection ul {
+  margin: 1.25em;
+}
+
+.design-selection ul li {
+  margin: 1.25em 0;
+}
+
+.design-archives {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  background: #008f5a;
+  padding: 2em 0;
+  color: white;
+}
+
+.design-archives ul {
+  margin: 1.25em;
+}
+
+.design-archives ul li {
+  margin: 1.25em 0;
+}
+
+.zen-resources {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  background: lightgray;
+  padding: 2em 0;
+}
+
+.zen-resources ul {
+  margin: 1.25em;
+}
+
+.zen-resources ul li {
+  margin: 1.25em 0;
+}
+
+@media screen and (min-width: 48rem) {
+  .page-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(0, 8.33%))[12];
+        grid-template-columns: repeat(12, minmax(0, 8.33%));
+  }
+  .intro {
+    grid-column: span 12;
+  }
+  header {
+    height: 85vh;
+  }
+  .summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 15vh;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    background-color: #008f5a;
+    color: white;
+  }
+  .summary p:first-of-type {
+    width: 55%;
+  }
+  .preamble {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .preamble p {
+    max-width: 60%;
+  }
+  .main {
+    grid-column: span 12;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(0, 8.33%))[12];
+        grid-template-columns: repeat(12, minmax(0, 8.33%));
+  }
+  .explanation,
+  .participation {
+    padding: 2em;
+  }
+  .explanation {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
+    grid-column: 2 / span 5;
+  }
+  .participation {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 5;
+    grid-column: 7 / span 5;
+  }
+  .benefits {
+    grid-column: span 12;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.25em;
+  }
+  .requirements {
+    grid-column: span 12;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(0, 8.33%))[12];
+        grid-template-columns: repeat(12, minmax(0, 8.33%));
+  }
+  .requirements h3 {
+    grid-column: span 12;
+    text-align: center;
+  }
+  .requirements p {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 6;
+    grid-column: 4 / span 6;
+    padding: 2em;
+  }
+  .requirements p:last-of-type {
+    grid-column: span 12;
+    text-align: center;
+    font-size: 2.0736rem;
+    padding: 1.25em 5.25em;
+  }
+  footer {
+    grid-column: span 12;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer a {
+    padding: 1.25em;
+  }
+  .sidebar {
+    grid-column: span 12;
+  }
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(0, 8.33%))[12];
+        grid-template-columns: repeat(12, minmax(0, 8.33%));
+  }
+  .design-selection {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / span 6;
+  }
+  .design-archives {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: span 12;
+  }
+  .zen-resources {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-column: 7 / span 6;
+  }
+}
+/*# sourceMappingURL=style.css.map */

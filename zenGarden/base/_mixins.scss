@@ -1,0 +1,49 @@
+// grid
+@mixin grid($columns, $max-percent) {
+    display: grid;
+    grid-template-columns: repeat($columns, minmax(0, $max-percent));
+}
+
+// breakpoints
+$breakpoint-xs: 32rem;
+// ~512px
+$breakpoint-sm: 48rem;
+// ~768px
+$breakpoint-md: 64rem;
+// ~1024px
+$breakpoint-lg: 80rem;
+// ~1280px
+$breakpoint-xl: 90rem;
+// ~1440px
+
+@mixin breakpoint($breakpoint) {
+    @if $breakpoint==lg {
+        @media screen and (min-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==md {
+        @media screen and (min-width: $breakpoint-md) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==sm {
+        @media screen and (min-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint==xs {
+        @media screen and (min-width: $breakpoint-xs) {
+            @content;
+        }
+    }
+
+    @else {
+        @media ($breakpoint) {
+            @content;
+        }
+    }
+}
